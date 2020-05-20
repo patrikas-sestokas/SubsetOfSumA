@@ -150,7 +150,7 @@ namespace SubsetSum {
                     if (v[i] == previous) continue;
                     //adds element to path (to be removed later)
                     path.Add(previous = v[i]);
-                    //we decrease A depending on sum of subarray, until it the new target reaches 0.
+                    //decrease A depending on sum of updated subarray, until it the new target reaches 0.
                     var newTarget = target - v[i];
                     //if new subarray (path) constitutes to wanted sum, return it.
                     if (newTarget == 0) return path;
