@@ -173,7 +173,7 @@ namespace SubsetSum {
                     }
                     //explore possibility tree further with new target sum, constraints and updated subarray.
                     queue.Enqueue((newTarget, nFloor, nCeil, new List<int>(path)));
-                    //remove added element, so that the next possibility subtree evaluated correctly.
+                    //remove added element, so that the next possibility subtree is evaluated correctly.
                     path.RemoveAt(path.Count - 1);
                 }
             }
